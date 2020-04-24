@@ -4,13 +4,15 @@ import com.holcomb.sean.diexample.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ConstructorInjectedControllerTest {
+class SetterInjectedControllerTest {
 
-    ConstructorInjectedController controller;
+    SetterInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController(new ConstructorGreetingService());
+        controller = new SetterInjectedController();
+
+        controller.setGreetingService(new ConstructorGreetingService());
     }
 
     @Test
