@@ -4,7 +4,7 @@ import com.holcomb.sean.diexample.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-@Controller
+//@Controller
 public class I18NController {
 
     private final GreetingService greetingService;
